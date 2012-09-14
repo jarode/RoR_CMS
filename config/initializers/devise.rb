@@ -3,9 +3,7 @@
 Devise.setup do |config|
 
   require "omniauth-facebook"
-  config.omniauth :facebook, "360714307337488", "1cb42cda4389358a84b2329b6550caa5", 
-  :strategy_class => OmniAuth::Strategies::Facebook,
-  {:scope => 'email, offline_access', :client_options => {:ssl => {:ca_file => '/usr/lib/ssl/certs/ca-certificates.crt'}}}
+  config.omniauth :facebook, "360714307337488", "1cb42cda4389358a84b2329b6550caa5", :strategy_class => OmniAuth::Strategies::Facebook, {:scope => 'email, offline_access', :client_options => {:ssl => {:ca_file => '/usr/lib/ssl/certs/ca-certificates.crt'}}}
   #,:client_options => {:ssl => {:ca_path => '/etc/ssl/certs'}}
   
   
